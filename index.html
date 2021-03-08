@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-md-6 ml-auto mr-auto"> -->
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center mb-3">Weight Converter</h1>
+                <form>
+                    <div class="form-group">
+                        <input type="number" class="form-control form-control-lg" placeholder="Enter Pounds..." id="input">
+                        <select id="select" class="form-control">
+                            <option value="lbs">Pounds</option>
+                            <option value="kg">Kilograms</option>
+                            <option value="g">Grams</option>
+                            <option value="oz">Ounce</option>
+                        </select>
+                    </div>
+                </form>
+                <div id="output">
+                    <div class="card  card-success mb-2">
+                        <div class="card-block">
+                            <h4>Grams:</h4>
+                            <div id="gramsOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card card-danger mb-2">
+                        <div class="card-block">
+                            <h4>Kilograms:</h4>
+                            <div id="kgOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card  card-primary mb-2">
+                        <div class="card-block">
+                            <h4>Ounces:</h4>
+                            <div id="ozOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-warning">
+                        <div class="card-block">
+                            <h4>Pounds:</h4>
+                            <div id="lbsOutput"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='app.js'></script>
+</body>
+</html>
